@@ -30,7 +30,7 @@ jobs:
         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
       
     # Azure connection with GitHub
-    - name: Login to Azure US Gov Cloud with Az Powershell
+    - name: Login to Azure
       uses: azure/login@v1 
       with:
        creds: ${{ secrets.AZURE_CREDENTIALS}}
